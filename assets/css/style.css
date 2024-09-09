@@ -1,0 +1,74 @@
+/* ======================================Chung=============================================== */
+
+nav ul li a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+.container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+.btn {
+  background-color: #2e80ce;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 6rem;
+  text-align: center;
+  font-weight: 400;
+  min-width: 205px;
+}
+/* ======================================Header=============================================== */
+
+header {
+  padding-top: 30px;
+  height: 100vh;
+  background-color: rgb(16, 55, 92);
+}
+
+.header .header-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__nav ul li a {
+  padding: 8px 21px;
+}
+
+.header__nav ul li a:hover {
+  font-weight: 600;
+  color: #fff;
+}
+.navbar__content-item--active {
+  color: #fff;
+}
+.navbar__content-item--active::before {
+  position: relative;
+  content: "";
+  display: inline-block;
+
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: -2px;
+  right: 6px;
+}
+
+.header__btn--signin{
+    min-width: 144px;
+    font-weight: 300;
+    line-height: 4.4rem;
+}
+
+.header__btn--login{
+    background-color: rgb(16, 55, 92);
+padding: 8px 21px;
+margin-left: 7px;
+
+}
