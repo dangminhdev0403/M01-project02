@@ -261,50 +261,46 @@ header {
   font-size: 1.6rem;
   text-decoration: none;
   color: #2e80ce;
-
 }
 
-.works__list{
+.works__list {
   margin-top: 86px;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-gap: 30px ;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
 }
-.works__item{
+.works__item {
   padding: 43px;
- border:  16px solid #eaf6ff;
- transition: 0.25s;
+  border: 16px solid #eaf6ff;
+  transition: 0.25s;
 }
 
-.works__item:hover{
+.works__item:hover {
   border-color: #2e80ce;
   transform: translateY(-16px);
-  
 }
 /* =======================about================================================= */
 
-.about{
+.about {
   padding: 85px 0 206px;
-
 }
-.about .container{
+.about .container {
   display: flex;
   justify-content: space-between;
 }
 /*  item right */
-.about__images{
+.about__images {
   display: flex;
   position: relative;
   width: 49%;
-
 }
 
-.about__images--big{
+.about__images--big {
   width: 512px;
   height: 370px;
   object-fit: cover;
 }
-.about__images--small{
+.about__images--small {
   z-index: 3;
   position: absolute;
   top: 121px;
@@ -315,15 +311,95 @@ header {
 }
 
 /* item left */
-.about--content{
+.about--content {
   width: 40%;
 
-   display: flex;
+  display: flex;
 
   flex-direction: column;
   justify-content: space-around;
-  align-items: start; 
-
+  align-items: start;
 }
 
 /* ================================team================================================== */
+
+.team {
+  margin: 85px 0;
+}
+.team__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.team__heading {
+  margin-bottom: 38px;
+}
+
+/*  list team */
+
+.team__list {
+  margin-top: 70px;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.team__item--bg {
+  background-color: #eaf6ff;
+  border-radius: 6px;
+  line-height: 16px;
+  padding: 28px 0px 0px;
+}
+.team__item--thumb {
+  width: 262px;
+  height: 290px;
+  object-fit: cover;
+  transition: 0.25s;
+}
+
+.team__item--bg:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  
+}
+.team__item--name{
+  font-weight: 400;
+  margin-top: 12px;
+  color: #10375c;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+.team__item--desc{
+  color: #575f66;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.86;
+}
+
+.team__icon{
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+.team__icon--control{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+width: 36px;
+height: 36px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.team__icon--control:hover{
+  cursor: pointer;
+  background-color: #2e80ce;
+  color: #fff;
+}
+.control2{
+  rotate: 180deg;
+}
