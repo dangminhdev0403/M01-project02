@@ -350,56 +350,230 @@ header {
   border-radius: 6px;
   line-height: 16px;
   padding: 28px 0px 0px;
+  overflow: hidden;
 }
 .team__item--thumb {
-  width: 262px;
+  display: block;
+  max-width: 100%;
   height: 290px;
   object-fit: cover;
-  transition: 0.25s;
+  transition: 0.5s;
 }
 
-.team__item--bg:hover {
+.team__item--bg:hover .team__item--thumb {
   cursor: pointer;
-  transform: scale(1.1);
-  
+  transform: scale(1.2);
 }
-.team__item--name{
+.team__item--name {
   font-weight: 400;
   margin-top: 12px;
   color: #10375c;
-    text-align: center;
-    font-size: 1.6rem;
-    line-height: 1.75;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.75;
 }
-.team__item--desc{
+.team__item--desc {
   color: #575f66;
-    text-align: center;
-    font-size: 1.4rem;
-    font-weight: 300;
-    line-height: 1.86;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.86;
 }
 
-.team__icon{
+.team__icon {
   margin-top: 38px;
   display: flex;
   justify-content: center;
   gap: 18px;
 }
-.team__icon--control{
+.team__icon--control {
   display: flex;
   justify-content: center;
   align-items: center;
-width: 36px;
-height: 36px;
+  width: 36px;
+  height: 36px;
   border: 1px solid black;
   border-radius: 50%;
   background-color: #fff;
+  color: black;
 }
-.team__icon--control:hover{
+.team__icon--control:hover {
   cursor: pointer;
   background-color: #2e80ce;
   color: #fff;
 }
-.control2{
+.control2 {
   rotate: 180deg;
+}
+
+/* ============================================install============================================ */
+
+.install__inner {
+  display: flex;
+  margin: 180px 0 85px;
+  padding: 0 70px;
+  background-color: #2e80ce;
+  position: relative;
+  height: 472px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.install__images--thumb {
+  position: absolute;
+  bottom: 0;
+  left: 70px;
+  width: 284px;
+  height: 552px;
+  object-fit: cover;
+}
+
+.install__content {
+  max-width: 586px;
+}
+
+.install__heading {
+  color: #fff;
+}
+
+.install__desc {
+  margin: 18px 0 38px;
+  color: #fff;
+}
+.install__row {
+  display: flex;
+  gap: 38px;
+}
+
+/* =================================blog========================================= */
+.blog {
+  padding: 85px 0;
+}
+
+.blog__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog__content {
+  width: 40%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.blog__content .team__icon {
+  justify-content: start;
+}
+
+.blog__read {
+  display: inline-block;
+  font-weight: 600;
+  color: #10375c;
+}
+.blog__list {
+  width: 49%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+.blog__item--img {
+  width: 270px;
+  height: 172px;
+  object-fit: cover;
+}
+.blog__item.item1 {
+  grid-column: 1;
+}
+
+/* ===================================foooter======================================== */
+
+.footer {
+  padding-top: 100px;
+
+  background-color: #10375c;
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+  gap: 78px;
+}
+
+.footer__desc {
+  color: #a9b3bb;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  margin-top: 21px;
+}
+.footer__desc2 {
+  display: inline;
+  text-align: start;
+  color: #a9b3bb;
+  font-size: 1.4rem;
+  line-height: 1.75;
+}
+.footer__heading {
+  font-size: 1.5rem;
+  margin-bottom: 23px;
+  font-weight: 500;
+  color: #fff;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.footer__heading.heading2 {
+  margin-top: 28px;
+}
+
+.team-icon {
+  gap: 6px;
+  display: flex;
+  margin: 20px 0;
+}
+.footer__social-btn:hover {
+  color: #fff;
+  background-color: #2e80ce;
+}
+.footer__social-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #10375c;
+}
+
+.footer__form{
+  margin-top: 10px;
+}
+.footer__btn {
+  height: 44px;
+  border: none;
+  padding: 1px 6px;
+  background-color: #2e80ce;
+  border-radius: 4px;
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  max-width: 108px;
+}
+
+.form-input {
+  width: 212px;
+  height: 46px;
+  background-color: transparent;
+  border-color: #406181;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 0.8px;
+  color: #fff;
+  font-family: Open Sans;
+  padding: 1px 2px;
 }
